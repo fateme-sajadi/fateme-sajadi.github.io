@@ -15,7 +15,9 @@
     <!-- AOS CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
 
 
     <style>
@@ -31,15 +33,16 @@
             --card-shadow: 0 4px 24px rgba(44, 62, 80, 0.07);
             --card-hover-shadow: 0 8px 32px rgba(44, 62, 80, 0.13);
             --text-muted: #6c757d;
-            --navbar-bg: rgba(255,255,255,0.95);
-            --navbar-scroll-bg: rgba(255,255,255,1);
+            --navbar-bg: rgba(255, 255, 255, 0.95);
+            --navbar-scroll-bg: rgba(255, 255, 255, 1);
             --highlight-bg: rgba(245, 124, 0, 0.13);
             --section-spacing: 2.2rem;
             --section-spacing-mobile: 1.2rem;
             --navbar-height: 60px;
         }
 
-        html, body {
+        html,
+        body {
             min-height: 100%;
             background: var(--bg-gradient);
             color: var(--text-color-dark);
@@ -69,6 +72,7 @@
             min-height: var(--navbar-height);
             border-radius: 0 0 18px 18px;
         }
+
         .navbar-brand {
             font-family: 'Roboto', sans-serif;
             font-weight: 700;
@@ -76,6 +80,7 @@
             font-size: 1.3rem;
             letter-spacing: 0.5px;
         }
+
         .nav-link {
             color: var(--primary-accent) !important;
             font-family: 'Roboto', sans-serif;
@@ -86,10 +91,13 @@
             transition: background 0.2s, color 0.2s;
             padding: 0.5rem 1rem !important;
         }
-        .nav-link.active, .nav-link:hover {
+
+        .nav-link.active,
+        .nav-link:hover {
             color: var(--link-hover-color) !important;
             background: rgba(245, 124, 0, 0.08);
         }
+
         .navbar-toggler {
             border: none;
             font-size: 1.1rem;
@@ -101,9 +109,11 @@
             padding-bottom: var(--section-spacing);
             margin-bottom: 0;
         }
+
         section:not(:first-child) {
             border-top: 1px solid #e0e4ea;
         }
+
         @media (max-width: 576px) {
             section {
                 padding-top: var(--section-spacing-mobile);
@@ -120,8 +130,9 @@
             padding-top: calc(var(--navbar-height) + 1.5rem);
             padding-bottom: var(--section-spacing);
         }
+
         .profile-card {
-            background: rgba(255,255,255,0.95);
+            background: rgba(255, 255, 255, 0.95);
             border-radius: 2rem;
             box-shadow: var(--card-shadow);
             display: flex;
@@ -133,12 +144,14 @@
             margin: auto;
             position: relative;
         }
+
         .profile-image-container {
             flex-shrink: 0;
             display: flex;
             align-items: center;
             justify-content: center;
         }
+
         .profile-image {
             width: 340px;
             height: 340px;
@@ -149,13 +162,16 @@
             background: #fff;
             transition: transform 0.2s;
         }
+
         .profile-image:hover {
             transform: scale(1.03) rotate(-2deg);
         }
+
         .profile-text-content {
             flex-grow: 1;
             text-align: left;
         }
+
         h1.heading-main {
             color: var(--heading-color);
             font-family: 'Roboto', sans-serif;
@@ -164,6 +180,7 @@
             margin-bottom: 0.2rem;
             letter-spacing: 0.5px;
         }
+
         .profile-text-content h3 {
             color: var(--primary-accent);
             font-size: 1.2rem;
@@ -171,6 +188,7 @@
             font-family: 'Roboto', sans-serif;
             margin-bottom: 0.5rem;
         }
+
         .profile-text-content p {
             color: var(--text-color-dark);
             opacity: 0.92;
@@ -178,32 +196,39 @@
             line-height: 1.6;
             margin-bottom: 0.2rem;
         }
+
         .profile-text-content p:last-of-type {
             margin-bottom: 1.1rem;
         }
+
         .social-links {
             margin-top: 0.5rem;
             display: flex;
             gap: 1.2rem;
         }
+
         .social-link {
             color: var(--primary-accent);
             font-size: 1.7rem;
             transition: color 0.2s, transform 0.2s;
         }
+
         .social-link:hover {
             color: var(--link-hover-color);
             transform: translateY(-2px) scale(1.1);
         }
+
         .hobbies {
             margin-top: 1.2rem;
             text-align: left;
         }
+
         .hobbies p {
             font-size: 0.98rem;
             color: var(--text-muted);
             margin-bottom: 0.3rem;
         }
+
         .hobbies span {
             color: var(--primary-accent);
             background: rgba(46, 125, 107, 0.08);
@@ -217,11 +242,13 @@
             margin: 2px 4px 2px 0;
             transition: background 0.2s, color 0.2s, border-color 0.2s;
         }
+
         .hobbies span:hover {
             background: var(--primary-accent);
             color: #fff;
             border-color: var(--primary-accent);
         }
+
         @media (max-width: 992px) {
             .profile-card {
                 flex-direction: column;
@@ -229,27 +256,34 @@
                 padding: 2rem 1.2rem;
                 gap: 1.5rem;
             }
+
             .profile-image {
                 width: 220px;
                 height: 220px;
             }
+
             .profile-text-content {
                 text-align: center;
             }
-            .social-links, .hobbies {
+
+            .social-links,
+            .hobbies {
                 justify-content: center;
                 text-align: center;
             }
         }
+
         @media (max-width: 576px) {
             .profile-card {
                 padding: 1.2rem 0.5rem;
                 border-radius: 1.2rem;
             }
+
             .profile-image {
                 width: 120px;
                 height: 120px;
             }
+
             h1.heading-main {
                 font-size: 1.5rem;
             }
@@ -264,15 +298,25 @@
             margin-bottom: 1.1rem;
             transition: box-shadow 0.2s, transform 0.2s;
         }
+
         .card:hover {
             box-shadow: var(--card-hover-shadow);
             transform: translateY(-2px) scale(1.01);
         }
-        .card-body, .card.p-3, .card.p-4 {
+
+        .card-body,
+        .card.p-3,
+        .card.p-4 {
             color: var(--text-color-dark);
         }
-        .card .p-3 { padding: 1.3rem !important; }
-        .card .p-4 { padding: 1.7rem !important; }
+
+        .card .p-3 {
+            padding: 1.3rem !important;
+        }
+
+        .card .p-4 {
+            padding: 1.7rem !important;
+        }
 
         /* Section Headings */
         section h2 {
@@ -296,6 +340,7 @@
         .search-container {
             margin-bottom: 1.2rem;
         }
+
         .search-input {
             width: 100%;
             padding: 10px 18px;
@@ -306,6 +351,7 @@
             background: #fff;
             transition: border-color 0.2s, box-shadow 0.2s;
         }
+
         .search-input:focus {
             border-color: var(--primary-accent);
             box-shadow: 0 0 0 0.13rem rgba(46, 125, 107, 0.13);
@@ -319,6 +365,7 @@
             font-weight: 700;
             color: var(--primary-accent);
         }
+
         .publication-card .authors {
             font-style: italic;
             color: var(--text-color-dark);
@@ -326,6 +373,7 @@
             font-size: 0.92rem;
             margin-bottom: 0.1rem;
         }
+
         .publication-card .venue {
             font-weight: 500;
             color: var(--text-color-dark);
@@ -333,6 +381,7 @@
             font-size: 0.92rem;
             margin-bottom: 0.5rem;
         }
+
         .publication-card .links a {
             margin-right: 10px;
             color: var(--link-color);
@@ -341,14 +390,18 @@
             font-size: 0.92rem;
             transition: color 0.2s;
         }
+
         .publication-card .links a:hover {
             color: var(--link-hover-color);
             text-decoration: underline;
         }
-        .publication-card .links i, .publication-card .links .ai {
+
+        .publication-card .links i,
+        .publication-card .links .ai {
             margin-right: 2px;
             font-size: 0.9em;
         }
+
         .publication-card .abstract {
             font-size: 0.92rem;
             color: var(--text-muted);
@@ -356,16 +409,19 @@
             text-align: justify;
             line-height: 1.5;
         }
+
         .publication-card .abstract strong {
             color: var(--text-color-dark);
             opacity: 0.9;
             font-weight: 600;
         }
+
         .highlight {
             background: var(--highlight-bg);
             border-radius: 3px;
             font-weight: inherit;
         }
+
         .hidden {
             display: none;
         }
@@ -375,17 +431,20 @@
             padding: 1.1rem 1.3rem;
             border-radius: 1rem;
         }
+
         .list-item-card h5 {
             margin-bottom: 0.1rem;
             font-size: 1.05rem;
             color: var(--primary-accent);
             font-weight: 700;
         }
+
         .list-item-card p {
             margin-bottom: 0.1rem;
             line-height: 1.5;
             font-size: 1rem;
         }
+
         .list-item-card .meta {
             font-size: 0.92rem;
             color: var(--text-muted);
@@ -399,6 +458,7 @@
             background: transparent;
             width: 100%;
         }
+
         footer p {
             color: var(--text-muted);
             font-size: 0.92rem;
@@ -410,16 +470,20 @@
             .container {
                 max-width: 98vw;
             }
+
             section h2 {
                 font-size: 1.2rem;
             }
         }
+
         @media (max-width: 576px) {
             .container {
                 padding-left: 0.2rem;
                 padding-right: 0.2rem;
             }
-            .list-item-card, .card {
+
+            .list-item-card,
+            .card {
                 padding-left: 0.7rem !important;
                 padding-right: 0.7rem !important;
             }
@@ -431,24 +495,26 @@
 
     <!-- Navigation Bar -->
     <nav id="navbar-main" class="navbar navbar-expand-lg fixed-top">
-      <div class="container">
-        <a class="navbar-brand py-1" href="#home">Fateme Sajadi</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link active py-1" href="#home">Home</a></li>
-            <li class="nav-item"><a class="nav-link py-1" href="#research">Research</a></li>
-            <li class="nav-item"><a class="nav-link py-1" href="#papers">Papers</a></li>
-            <li class="nav-item"><a class="nav-link py-1" href="#education">Education</a></li>
-            <li class="nav-item"><a class="nav-link py-1" href="#talks">Talks</a></li>
-            <li class="nav-item"><a class="nav-link py-1" href="#teaching">Teaching</a></li>
-            <li class="nav-item"><a class="nav-link py-1" href="#awards">Awards</a></li>
-            <!-- <li class="nav-item"><a class="nav-link py-1" href="#news">News</a></li> -->
-          </ul>
+        <div class="container">
+            <a class="navbar-brand py-1" href="#home">Fateme Sajadi</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active py-1" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link py-1" href="#research">Research</a></li>
+                    <li class="nav-item"><a class="nav-link py-1" href="#papers">Papers</a></li>
+                    <li class="nav-item"><a class="nav-link py-1" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link py-1" href="#talks">Talks</a></li>
+                    <li class="nav-item"><a class="nav-link py-1" href="#teaching">Teaching</a></li>
+                    <li class="nav-item"><a class="nav-link py-1" href="#awards">Awards</a></li>
+                    <li class="nav-item"><a class="nav-link py-1" href="#miscellaneous">Miscellaneous</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link py-1" href="#news">News</a></li> -->
+                </ul>
+            </div>
         </div>
-      </div>
     </nav>
 
     <!-- Main Content Container -->
@@ -461,18 +527,20 @@
                 </div>
                 <div class="profile-text-content">
                     <h1 class="heading-main font-bold">Fateme Sajadi</h1>
-                    <h1 class="heading-main font-bold" style="font-size:1.3rem; color:var(--secondary-accent);margin-bottom:0.7rem;">(Sara)</h1>
-                    <h3 class="mb-1">PhD Student</h3>
+                    <h1 class="heading-main font-bold"
+                        style="font-size:1.3rem; color:var(--secondary-accent);margin-bottom:0.7rem;">(Sara)</h1>
+                    <h3 class="mb-1">PhD Candidate</h3>
                     <p>Department of Mathematics</p>
                     <p>University of Toronto</p>
                     <div class="social-links">
-                        <a href="mailto:f.sajadi@mail.utoronto.ca" class="social-link" title="Email me" target="_blank" rel="noopener noreferrer">
+                        <a href="mailto:f.sajadi@mail.utoronto.ca" class="social-link" title="Email me" target="_blank"
+                            rel="noopener noreferrer">
                             <i class="fas fa-envelope"></i>
                         </a>
-                        <!-- Add more social links if needed -->
-                        <!-- <a href="https://scholar.google.com/citations?user=Qw7k8hEAAAAJ" class="social-link" title="Google Scholar" target="_blank" rel="noopener noreferrer">
+                        <a href="https://scholar.google.com/citations?user=82y9JwsAAAAJ&hl=en" class="social-link"
+                            title="Google Scholar" target="_blank" rel="noopener noreferrer">
                             <i class="ai ai-google-scholar"></i>
-                        </a> -->
+                        </a>
                     </div>
                     <div class="hobbies">
                         <p>Interests outside math:</p>
@@ -489,7 +557,9 @@
             <h2>Research Interests</h2>
             <div class="card shadow-sm p-3">
                 <p class="leading-relaxed mb-0">
-                    I am a PhD student at the University of Toronto, advised by Prof. Jacob Tsimerman. My research focuses on number theory and algebraic geometry, with particular interest in the finiteness of étale divisors and related arithmetic questions.
+                    I am a PhD student at the University of Toronto, advised by Prof. Jacob Tsimerman. My research
+                    focuses on number theory and algebraic geometry, with particular interest in the finiteness of étale
+                    divisors and related arithmetic questions.
                 </p>
             </div>
         </section>
@@ -498,32 +568,39 @@
         <section id="papers" data-aos="fade-up">
             <h2>Papers & Preprints</h2>
             <div class="search-container" data-aos="fade-up">
-                <input type="text" id="publicationSearch" class="search-input" placeholder="Search papers..." oninput="debouncedFilterPublications()">
+                <input type="text" id="publicationSearch" class="search-input" placeholder="Search papers..."
+                    oninput="debouncedFilterPublications()">
             </div>
             <div class="row g-2" id="publications-container">
-                <div class="col-12 publication-item" data-keywords="unified finiteness theorem curves fateme sajadi fatemehzahra janbazi arxiv 2025 number theory algebraic geometry">
+                <div class="col-12 publication-item"
+                    data-keywords="unified finiteness theorem curves fateme sajadi fatemehzahra janbazi arxiv 2025 number theory algebraic geometry">
                     <div class="card publication-card shadow-sm p-3">
                         <h5>A Unified Finiteness Theorem For Curves Over Function Fields</h5>
                         <p class="authors">Fateme Sajadi</p>
                         <p class="venue">arXiv:2507.19669, 2025</p>
                         <div class="links">
-                            <a href="https://arxiv.org/abs/2507.19669" target="_blank" rel="noopener noreferrer" style="color: var(--secondary-accent);"><i class="ai ai-arxiv"></i> ArXiv</a>
-                            <a href="https://arxiv.org/pdf/2507.19669" target="_blank" rel="noopener noreferrer" style="color: var(--secondary-accent);"><i class="fas fa-file-pdf"></i> PDF</a>
+                            <a href="https://arxiv.org/abs/2507.19669" target="_blank" rel="noopener noreferrer"
+                                style="color: var(--secondary-accent);"><i class="ai ai-arxiv"></i> ArXiv</a>
+                            <a href="https://arxiv.org/pdf/2507.19669" target="_blank" rel="noopener noreferrer"
+                                style="color: var(--secondary-accent);"><i class="fas fa-file-pdf"></i> PDF</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 publication-item" data-keywords="unified finiteness theorem curves fateme sajadi fatemehzahra janbazi arxiv 2025 number theory algebraic geometry">
+                <div class="col-12 publication-item"
+                    data-keywords="unified finiteness theorem curves fateme sajadi fatemehzahra janbazi arxiv 2025 number theory algebraic geometry">
                     <div class="card publication-card shadow-sm p-3">
                         <h5>A unified finiteness theorem for curves</h5>
                         <p class="authors">Fatemehzahra Janbazi, Fateme Sajadi</p>
                         <p class="venue">arXiv:2505.09804, 2025</p>
                         <div class="links">
-                            <a href="https://arxiv.org/abs/2505.09804" target="_blank" rel="noopener noreferrer" style="color: var(--secondary-accent);"><i class="ai ai-arxiv"></i> ArXiv</a>
-                            <a href="https://arxiv.org/pdf/2505.09804" target="_blank" rel="noopener noreferrer" style="color: var(--secondary-accent);"><i class="fas fa-file-pdf"></i> PDF</a>
+                            <a href="https://arxiv.org/abs/2505.09804" target="_blank" rel="noopener noreferrer"
+                                style="color: var(--secondary-accent);"><i class="ai ai-arxiv"></i> ArXiv</a>
+                            <a href="https://arxiv.org/pdf/2505.09804" target="_blank" rel="noopener noreferrer"
+                                style="color: var(--secondary-accent);"><i class="fas fa-file-pdf"></i> PDF</a>
                         </div>
                     </div>
                 </div>
-                <!-- Add more publication items here -->   
+                <!-- Add more publication items here -->
             </div>
             <div id="no-results" class="text-center text-muted mt-2 hidden">No matching papers found.</div>
         </section>
@@ -531,33 +608,48 @@
         <section id="education" data-aos="fade-up">
             <h2>Education</h2>
             <div class="row g-2">
-            <div class="col-12" data-aos="fade-up" data-aos-delay="50">
-                <div class="card shadow-sm p-3">
-                <div class="d-flex flex-column flex-sm-row justify-content-between align-items-start align-items-sm-center mb-1">
-                    <h4 class="mb-1 mb-sm-0" style="font-family:'Roboto',sans-serif; font-weight:700; color:var(--primary-accent); font-size:1.15rem;">University of Toronto</h4>
-                    <span class="text-muted flex-shrink-0 ms-sm-2" style="font-family:'Lora',serif; font-size:0.98rem;">Sep 2021 – Present</span>
+                <div class="col-12" data-aos="fade-up" data-aos-delay="50">
+                    <div class="card shadow-sm p-3">
+                        <div
+                            class="d-flex flex-column flex-sm-row justify-content-between align-items-start align-items-sm-center mb-1">
+                            <h4 class="mb-1 mb-sm-0"
+                                style="font-family:'Roboto',sans-serif; font-weight:700; color:var(--primary-accent); font-size:1.15rem;">
+                                University of Toronto</h4>
+                            <span class="text-muted flex-shrink-0 ms-sm-2"
+                                style="font-family:'Lora',serif; font-size:0.98rem;">Sep 2021 – Present</span>
+                        </div>
+                        <span style="color:var(--text-color-dark); font-family:'Lora',serif; font-size:1rem;">PhD in
+                            Mathematics, Supervised by Jacob Tsimerman</span>
+                    </div>
                 </div>
-                <span style="color:var(--text-color-dark); font-family:'Lora',serif; font-size:1rem;">PhD in Mathematics, Supervised by Jacob Tsimerman</span>
+                <div class="col-12" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card shadow-sm p-3">
+                        <div
+                            class="d-flex flex-column flex-sm-row justify-content-between align-items-start align-items-sm-center mb-1">
+                            <h4 class="mb-1 mb-sm-0"
+                                style="font-family:'Roboto',sans-serif; font-weight:700; color:var(--primary-accent); font-size:1.15rem;">
+                                Sharif University of Technology</h4>
+                            <span class="text-muted flex-shrink-0 ms-sm-2"
+                                style="font-family:'Lora',serif; font-size:0.98rem;">Sep 2017 – Jun 2021</span>
+                        </div>
+                        <span style="color:var(--text-color-dark); font-family:'Lora',serif; font-size:1rem;">BSc in
+                            Mathematics</span>
+                    </div>
                 </div>
-            </div>
-            <div class="col-12" data-aos="fade-up" data-aos-delay="100">
-                <div class="card shadow-sm p-3">
-                <div class="d-flex flex-column flex-sm-row justify-content-between align-items-start align-items-sm-center mb-1">
-                    <h4 class="mb-1 mb-sm-0" style="font-family:'Roboto',sans-serif; font-weight:700; color:var(--primary-accent); font-size:1.15rem;">Sharif University of Technology</h4>
-                    <span class="text-muted flex-shrink-0 ms-sm-2" style="font-family:'Lora',serif; font-size:0.98rem;">Sep 2017 – Jun 2021</span>
+                <div class="col-12" data-aos="fade-up" data-aos-delay="150">
+                    <div class="card shadow-sm p-3">
+                        <div
+                            class="d-flex flex-column flex-sm-row justify-content-between align-items-start align-items-sm-center mb-1">
+                            <h4 class="mb-1 mb-sm-0"
+                                style="font-family:'Roboto',sans-serif; font-weight:700; color:var(--primary-accent); font-size:1.15rem;">
+                                Young Scholars Club</h4>
+                            <span class="text-muted flex-shrink-0 ms-sm-2"
+                                style="font-family:'Lora',serif; font-size:0.98rem;">2015 – 2017</span>
+                        </div>
+                        <span style="color:var(--text-color-dark); font-family:'Lora',serif; font-size:1rem;">Official
+                            Preparation Course for International Mathematical Olympiad, Tehran, Iran</span>
+                    </div>
                 </div>
-                <span style="color:var(--text-color-dark); font-family:'Lora',serif; font-size:1rem;">BSc in Mathematics</span>
-                </div>
-            </div>
-            <div class="col-12" data-aos="fade-up" data-aos-delay="150">
-                <div class="card shadow-sm p-3">
-                <div class="d-flex flex-column flex-sm-row justify-content-between align-items-start align-items-sm-center mb-1">
-                    <h4 class="mb-1 mb-sm-0" style="font-family:'Roboto',sans-serif; font-weight:700; color:var(--primary-accent); font-size:1.15rem;">Young Scholars Club</h4>
-                    <span class="text-muted flex-shrink-0 ms-sm-2" style="font-family:'Lora',serif; font-size:0.98rem;">2015 – 2017</span>
-                </div>
-                <span style="color:var(--text-color-dark); font-family:'Lora',serif; font-size:1rem;">Official Preparation Course for International Mathematical Olympiad, Tehran, Iran</span>
-                </div>
-            </div>
             </div>
         </section>
 
@@ -565,34 +657,52 @@
         <section id="talks" data-aos="fade-up">
             <h2>Invited Talks</h2>
             <div class="row g-2">
-                <!-- <div class="col-12">
-                    <div class="card list-item-card shadow-sm">
-                        <h5>A unified finiteness theorem for curves</h5>
-                        <p class="meta">Number Theory Seminar, University of Toronto | 2025</p>
-                    </div>
-                </div>-->
                 <div class="col-12">
                     <div class="card list-item-card shadow-sm">
-                        <h5>A unified finiteness theorem for curves</h5>
-                        <p class="meta">33èmes Journées Arithmétiques, Luxembourg | July 2025</p>
+                        <h5>Number Theory by Early Career Researchers</h5>
+                        <p class="meta">Canadian Mathematical Society (CMS), Canada | December 2025</p>
                     </div>
-                </div> 
+                </div>
                 <div class="col-12">
                     <div class="card list-item-card shadow-sm">
-                        <h5>A unified finiteness theorem for curves</h5>
-                        <p class="meta">Women in Number Theory and Geometry (WINGs), United Kingdom | April 2025</p>
+                        <h5>Advanced seminar on Algebraic and Complex Geometry</h5>
+                        <p class="meta">Ruhr-Universität Bochum, Germany | November 2025</p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="card list-item-card shadow-sm">
+                        <h5>Algebra, number theory and algebraic geometry Seminar</h5>
+                        <p class="meta">University of Freiburg, Germany | November 2025</p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="card list-item-card shadow-sm">
+                        <h5>Ottawa/Carleton Number Theory Seminar</h5>
+                        <p class="meta">University of Ottawa, Canada | October 2025</p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="card list-item-card shadow-sm">
+                        <h5>33èmes Journées Arithmétiques</h5>
+                        <p class="meta">University of Luxembourg, Luxembourg | July 2025</p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="card list-item-card shadow-sm">
+                        <h5>Women in Number Theory and Geometry (WINGs)</h5>
+                        <p class="meta">United Kingdom | April 2025</p>
                     </div>
                 </div>
                 <div class="col-12">
                     <div class="card list-item-card shadow-sm">
                         <h5>The local-global principle over Number Fields and Function Fields</h5>
-                        <p class="meta">Bird's Eye Conference, University of Toronto | March 2025</p>
+                        <p class="meta">Bird’s Eye Conference, University of Toronto | March 2025</p>
                     </div>
                 </div>
                 <div class="col-12">
                     <div class="card list-item-card shadow-sm">
                         <h5>Elliptic curves and Weil conjecture</h5>
-                        <p class="meta">Bird's Eye Conference, University of Toronto | March 2024</p>
+                        <p class="meta">Bird’s Eye Conference, University of Toronto | March 2024</p>
                     </div>
                 </div>
             </div>
@@ -600,34 +710,49 @@
             <div class="row g-2">
                 <div class="col-12">
                     <div class="card list-item-card shadow-sm">
-                        <h5 style="font-family:'Roboto',sans-serif; font-weight:700; color:var(--primary-accent); font-size:1.05rem; margin-bottom:0.1rem;">
-                            Analytic Number Theory and Arithmetic Statistics, Centre de Recherches Mathématiques (CRM), Montreal, Canada.
+                        <h5
+                            style="font-family:'Roboto',sans-serif; font-weight:700; color:var(--primary-accent); font-size:1.05rem; margin-bottom:0.1rem;">
+                            Workshop on Model Theory, Algebraic Dynamics, and Differential-Algebraic Geometry
                         </h5>
-                        <p class="meta">August 2024</p>
+                        <p class="meta">The Fields Institute for Research in Mathematical Sciences, Toronto, Canada |
+                            June 2025</p>
                     </div>
                 </div>
                 <div class="col-12">
                     <div class="card list-item-card shadow-sm">
-                        <h5 style="font-family:'Roboto',sans-serif; font-weight:700; color:var(--primary-accent); font-size:1.05rem; margin-bottom:0.1rem;">
-                            Canadian Number Theory Association (CNTA), The Fields Institute for Research in Mathematical Sciences, Toronto, Canada.
+                        <h5
+                            style="font-family:'Roboto',sans-serif; font-weight:700; color:var(--primary-accent); font-size:1.05rem; margin-bottom:0.1rem;">
+                            Analytic Number Theory and Arithmetic Statistics
                         </h5>
-                        <p class="meta">June 2024</p>
+                        <p class="meta">Centre de Recherches Mathématiques (CRM), Montreal, Canada | August 2024</p>
                     </div>
                 </div>
                 <div class="col-12">
                     <div class="card list-item-card shadow-sm">
-                        <h5 style="font-family:'Roboto',sans-serif; font-weight:700; color:var(--primary-accent); font-size:1.05rem; margin-bottom:0.1rem;">
-                            Ontario Graduate Mathematics Conference (OGMC), University of Waterloo, Waterloo, Canada.
+                        <h5
+                            style="font-family:'Roboto',sans-serif; font-weight:700; color:var(--primary-accent); font-size:1.05rem; margin-bottom:0.1rem;">
+                            Canadian Number Theory Association (CNTA)
                         </h5>
-                        <p class="meta">June 2024</p>
+                        <p class="meta">The Fields Institute for Research in Mathematical Sciences, Toronto, Canada |
+                            June 2024</p>
                     </div>
                 </div>
                 <div class="col-12">
                     <div class="card list-item-card shadow-sm">
-                        <h5 style="font-family:'Roboto',sans-serif; font-weight:700; color:var(--primary-accent); font-size:1.05rem; margin-bottom:0.1rem;">
-                            Convex functions in analysis and geometry, Summer School at IABS, Zanjan, Iran.
+                        <h5
+                            style="font-family:'Roboto',sans-serif; font-weight:700; color:var(--primary-accent); font-size:1.05rem; margin-bottom:0.1rem;">
+                            Ontario Graduate Mathematics Conference (OGMC)
                         </h5>
-                        <p class="meta">August 2019</p>
+                        <p class="meta">University of Waterloo, Waterloo, Canada | June 2024</p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="card list-item-card shadow-sm">
+                        <h5
+                            style="font-family:'Roboto',sans-serif; font-weight:700; color:var(--primary-accent); font-size:1.05rem; margin-bottom:0.1rem;">
+                            Convex functions in analysis and geometry
+                        </h5>
+                        <p class="meta">Summer School at IABS, Zanjan, Iran | August 2019</p>
                     </div>
                 </div>
             </div>
@@ -639,67 +764,78 @@
             <div class="row g-2">
                 <div class="col-12">
                     <div class="card list-item-card shadow-sm">
-                        <h5>MAT315: Introduction to Number Theory <span class="fw-normal" style="font-weight:400;">– Course Instructor</span></h5>
+                        <h5>MAT315: Introduction to Number Theory <span class="fw-normal" style="font-weight:400;">–
+                                Course Instructor</span></h5>
                         <p class="meta">University of Toronto, Toronto | Summer 2025</p>
                     </div>
                 </div>
                 <div class="col-12">
                     <div class="card list-item-card shadow-sm">
-                        <h5>Mathematics Olympiad <span class="fw-normal" style="font-weight:400;">– Course Instructor</span></h5>
+                        <h5>Mathematics Olympiad <span class="fw-normal" style="font-weight:400;">– Course
+                                Instructor</span></h5>
                         <p class="meta">Farzanegan 2 High School, Tehran | 2017 – 2021</p>
                     </div>
                 </div>
                 <div class="col-12">
                     <div class="card list-item-card shadow-sm">
-                        <h5>Algebra and Geometry Olympiad <span class="fw-normal" style="font-weight:400;">– Course Instructor</span></h5>
+                        <h5>Algebra and Geometry Olympiad <span class="fw-normal" style="font-weight:400;">– Course
+                                Instructor</span></h5>
                         <p class="meta">Salam High School, Tehran | Summer 2018</p>
                     </div>
                 </div>
                 <div class="col-12">
                     <div class="card list-item-card shadow-sm">
-                        <h5>Combinatorics Olympiad <span class="fw-normal" style="font-weight:400;">– Course Instructor</span></h5>
+                        <h5>Combinatorics Olympiad <span class="fw-normal" style="font-weight:400;">– Course
+                                Instructor</span></h5>
                         <p class="meta">Enerji Atomi Middle School, Tehran | Summer 2018</p>
                     </div>
                 </div>
                 <div class="col-12">
                     <div class="card list-item-card shadow-sm">
-                        <h5>Geometry Olympiad <span class="fw-normal" style="font-weight:400;">– Course Instructor</span></h5>
+                        <h5>Geometry Olympiad <span class="fw-normal" style="font-weight:400;">– Course
+                                Instructor</span></h5>
                         <p class="meta">Farzanegan 7 High School, Tehran | 2017</p>
                     </div>
                 </div>
                 <div class="col-12">
                     <div class="card list-item-card shadow-sm">
-                        <h5>Math Learning Centre <span class="fw-normal" style="font-weight:400;">– Teaching Assistant</span></h5>
+                        <h5>Math Learning Centre <span class="fw-normal" style="font-weight:400;">– Teaching
+                                Assistant</span></h5>
                         <p class="meta">University of Toronto | 2023–2024</p>
                     </div>
                 </div>
                 <div class="col-12">
                     <div class="card list-item-card shadow-sm">
-                        <h5>MAT344: Introduction to Combinatorics <span class="fw-normal" style="font-weight:400;">– Teaching Assistant</span></h5>
+                        <h5>MAT344: Introduction to Combinatorics <span class="fw-normal" style="font-weight:400;">–
+                                Teaching Assistant</span></h5>
                         <p class="meta">University of Toronto | Summer 2023</p>
                     </div>
                 </div>
                 <div class="col-12">
                     <div class="card list-item-card shadow-sm">
-                        <h5>MAT315: Introduction to Number Theory <span class="fw-normal" style="font-weight:400;">– Teaching Assistant</span></h5>
+                        <h5>MAT315: Introduction to Number Theory <span class="fw-normal" style="font-weight:400;">–
+                                Teaching Assistant</span></h5>
                         <p class="meta">University of Toronto | Winter 2023</p>
                     </div>
                 </div>
                 <div class="col-12">
                     <div class="card list-item-card shadow-sm">
-                        <h5>MAT344: Introduction to Combinatorics <span class="fw-normal" style="font-weight:400;">– Teaching Assistant</span></h5>
+                        <h5>MAT344: Introduction to Combinatorics <span class="fw-normal" style="font-weight:400;">–
+                                Teaching Assistant</span></h5>
                         <p class="meta">University of Toronto | Fall 2022</p>
                     </div>
                 </div>
                 <div class="col-12">
                     <div class="card list-item-card shadow-sm">
-                        <h5>MAT223: Linear Algebra 1 <span class="fw-normal" style="font-weight:400;">– Teaching Assistant</span></h5>
+                        <h5>MAT223: Linear Algebra 1 <span class="fw-normal" style="font-weight:400;">– Teaching
+                                Assistant</span></h5>
                         <p class="meta">University of Toronto | Winter 2022</p>
                     </div>
                 </div>
                 <div class="col-12">
                     <div class="card list-item-card shadow-sm">
-                        <h5>MAT223: Linear Algebra 1 <span class="fw-normal" style="font-weight:400;">– Teaching Assistant</span></h5>
+                        <h5>MAT223: Linear Algebra 1 <span class="fw-normal" style="font-weight:400;">– Teaching
+                                Assistant</span></h5>
                         <p class="meta">University of Toronto | Fall 2021</p>
                     </div>
                 </div>
@@ -791,7 +927,42 @@
             </div>
         </section>
 
-        
+        <!-- Miscellaneous Section -->
+        <section id="miscellaneous" data-aos="fade-up">
+            <h2>Miscellaneous</h2>
+            <div class="row g-2">
+                <div class="col-12">
+                    <div class="card list-item-card shadow-sm">
+                        <h5>Turing Enterprises, INC <span class="fw-normal" style="font-weight:400;">– Math and AI
+                                researcher</span></h5>
+                        <p class="meta">2025 – Present</p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="card list-item-card shadow-sm">
+                        <h5>National Mathematics Olympiad Exams <span class="fw-normal" style="font-weight:400;">–
+                                Managed Exams</span></h5>
+                        <p class="meta">2017 – 2018</p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="card list-item-card shadow-sm">
+                        <h5>Iranian Geometric Olympiad Exam <span class="fw-normal" style="font-weight:400;">–
+                                Grader</span></h5>
+                        <p class="meta">2017 – 2018</p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="card list-item-card shadow-sm">
+                        <h5>Iranian Geometric Olympiad <span class="fw-normal" style="font-weight:400;">– Proposed
+                                Problems</span></h5>
+                        <p class="meta">2017 – 2018</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
 
         <!-- News & Updates Section (Uncomment and add content as needed) -->
         <!--
@@ -945,4 +1116,5 @@
         });
     </script>
 </body>
+
 </html>
