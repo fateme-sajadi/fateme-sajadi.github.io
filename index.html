@@ -451,6 +451,52 @@
             margin-bottom: 0;
         }
 
+        /* Section list — single card with items as a list */
+        .section-list-card {
+            background: var(--card-bg);
+            border: none;
+            border-radius: 1.2rem;
+            box-shadow: var(--card-shadow);
+            padding: 1.4rem 1.6rem;
+        }
+
+        .section-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .section-list li {
+            display: flex;
+            flex-direction: column;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid #eef0f4;
+        }
+
+        .section-list li:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .section-list li:first-child {
+            padding-top: 0;
+        }
+
+        .section-list .item-title {
+            font-family: 'Lora', serif;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--primary-accent);
+            margin-bottom: 0.15rem;
+            line-height: 1.5;
+        }
+
+        .section-list .item-meta {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            font-family: 'Roboto', sans-serif;
+        }
+
         /* Footer Modern */
         footer {
             margin-top: 2rem;
@@ -672,283 +718,196 @@
                 </div>
             </div>
             
-        </section>
-
-        
-        <!-- Invited Talks Section -->
+        </section>        <!-- Invited Talks Section -->
         <section id="talks" data-aos="fade-up">
             <h2>Invited Talks</h2>
-            <div class="row g-2">
-                <div class="col-12">
-                    <div class="card list-item-card shadow-sm">
-                        <h5>Advanced Seminar in Algebra and Geometry</h5>
-                        <p class="meta">Goethe University Frankfurt, Germany | March 2026</p>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="card list-item-card shadow-sm">
-                        <h5>Junior Number Theory Seminar</h5>
-                        <p class="meta">University of Toronto, Canada | February 2026</p>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="card list-item-card shadow-sm">
-                        <h5>Group, Lie and Number Theory Seminar</h5>
-                        <p class="meta">University of Michigan, USA | February 2026</p>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="card list-item-card shadow-sm">
-                        <h5>Number Theory by Early Career Researchers</h5>
-                        <p class="meta">Canadian Mathematical Society (CMS), Canada | December 2025</p>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="card list-item-card shadow-sm">
-                        <h5>Advanced seminar on Algebraic and Complex Geometry</h5>
-                        <p class="meta">Ruhr-Universität Bochum, Germany | November 2025</p>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="card list-item-card shadow-sm">
-                        <h5>Algebra, number theory and algebraic geometry Seminar</h5>
-                        <p class="meta">University of Freiburg, Germany | November 2025</p>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="card list-item-card shadow-sm">
-                        <h5>Ottawa/Carleton Number Theory Seminar</h5>
-                        <p class="meta">University of Ottawa, Canada | October 2025</p>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="card list-item-card shadow-sm">
-                        <h5>33èmes Journées Arithmétiques</h5>
-                        <p class="meta">University of Luxembourg, Luxembourg | July 2025</p>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="card list-item-card shadow-sm">
-                        <h5>Women in Number Theory and Geometry (WINGs)</h5>
-                        <p class="meta">United Kingdom | April 2025</p>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="card list-item-card shadow-sm">
-                        <h5>The local-global principle over Number Fields and Function Fields</h5>
-                        <p class="meta">Bird’s Eye Conference, University of Toronto | March 2025</p>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="card list-item-card shadow-sm">
-                        <h5>Elliptic curves and Weil conjecture</h5>
-                        <p class="meta">Bird’s Eye Conference, University of Toronto | March 2024</p>
-                    </div>
-                </div>
+            <div class="section-list-card">
+                <ul class="section-list">
+                    <li>
+                        <span class="item-title">Advanced Seminar in Algebra and Geometry</span>
+                        <span class="item-meta">Goethe University Frankfurt, Germany | March 2026</span>
+                    </li>
+                    <li>
+                        <span class="item-title">Junior Number Theory Seminar</span>
+                        <span class="item-meta">University of Toronto, Canada | February 2026</span>
+                    </li>
+                    <li>
+                        <span class="item-title">Group, Lie and Number Theory Seminar</span>
+                        <span class="item-meta">University of Michigan, USA | February 2026</span>
+                    </li>
+                    <li>
+                        <span class="item-title">Number Theory by Early Career Researchers</span>
+                        <span class="item-meta">Canadian Mathematical Society (CMS), Canada | December 2025</span>
+                    </li>
+                    <li>
+                        <span class="item-title">Advanced seminar on Algebraic and Complex Geometry</span>
+                        <span class="item-meta">Ruhr-Universität Bochum, Germany | November 2025</span>
+                    </li>
+                    <li>
+                        <span class="item-title">Algebra, number theory and algebraic geometry Seminar</span>
+                        <span class="item-meta">University of Freiburg, Germany | November 2025</span>
+                    </li>
+                    <li>
+                        <span class="item-title">Ottawa/Carleton Number Theory Seminar</span>
+                        <span class="item-meta">University of Ottawa, Canada | October 2025</span>
+                    </li>
+                    <li>
+                        <span class="item-title">33èmes Journées Arithmétiques</span>
+                        <span class="item-meta">University of Luxembourg, Luxembourg | July 2025</span>
+                    </li>
+                    <li>
+                        <span class="item-title">Women in Number Theory and Geometry (WINGs)</span>
+                        <span class="item-meta">United Kingdom | April 2025</span>
+                    </li>
+                    <li>
+                        <span class="item-title">The local-global principle over Number Fields and Function Fields</span>
+                        <span class="item-meta">Bird's Eye Conference, University of Toronto | March 2025</span>
+                    </li>
+                    <li>
+                        <span class="item-title">Elliptic curves and Weil conjecture</span>
+                        <span class="item-meta">Bird's Eye Conference, University of Toronto | March 2024</span>
+                    </li>
+                </ul>
             </div>
-            
         </section>
+
 
         <!-- Teaching Section -->
         <section id="teaching" data-aos="fade-up">
             <h2>Teaching</h2>
-            <div class="row g-2">
-                <div class="col-12">
-                    <div class="card list-item-card shadow-sm">
-                        <h5>MAT315: Introduction to Number Theory <span class="fw-normal" style="font-weight:400;">–
-                                Course Instructor</span></h5>
-                        <p class="meta">University of Toronto, Toronto | Summer 2025</p>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="card list-item-card shadow-sm">
-                        <h5>Mathematics Olympiad <span class="fw-normal" style="font-weight:400;">– Course
-                                Instructor</span></h5>
-                        <p class="meta">Farzanegan 2 High School, Tehran | 2017 – 2021</p>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="card list-item-card shadow-sm">
-                        <h5>Algebra and Geometry Olympiad <span class="fw-normal" style="font-weight:400;">– Course
-                                Instructor</span></h5>
-                        <p class="meta">Salam High School, Tehran | Summer 2018</p>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="card list-item-card shadow-sm">
-                        <h5>Geometry Olympiad <span class="fw-normal" style="font-weight:400;">– Course
-                                Instructor</span></h5>
-                        <p class="meta">Farzanegan 7 High School, Tehran | 2017</p>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="card list-item-card shadow-sm">
-                        <h5>Math Learning Centre <span class="fw-normal" style="font-weight:400;">– Teaching
-                                Assistant</span></h5>
-                        <p class="meta">University of Toronto | 2023–2024</p>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="card list-item-card shadow-sm">
-                        <h5>MAT344: Introduction to Combinatorics <span class="fw-normal" style="font-weight:400;">–
-                                Teaching Assistant</span></h5>
-                        <p class="meta">University of Toronto | Summer 2023</p>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="card list-item-card shadow-sm">
-                        <h5>MAT315: Introduction to Number Theory <span class="fw-normal" style="font-weight:400;">–
-                                Teaching Assistant</span></h5>
-                        <p class="meta">University of Toronto | Winter 2023</p>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="card list-item-card shadow-sm">
-                        <h5>MAT344: Introduction to Combinatorics <span class="fw-normal" style="font-weight:400;">–
-                                Teaching Assistant</span></h5>
-                        <p class="meta">University of Toronto | Fall 2022</p>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="card list-item-card shadow-sm">
-                        <h5>MAT223: Linear Algebra 1 <span class="fw-normal" style="font-weight:400;">– Teaching
-                                Assistant</span></h5>
-                        <p class="meta">University of Toronto | Winter 2022</p>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="card list-item-card shadow-sm">
-                        <h5>MAT223: Linear Algebra 1 <span class="fw-normal" style="font-weight:400;">– Teaching
-                                Assistant</span></h5>
-                        <p class="meta">University of Toronto | Fall 2021</p>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="card list-item-card shadow-sm">
-                        <h5>Algebra <span class="fw-normal" style="font-weight:400;">– Teaching Assistant</span></h5>
-                        <p class="meta">Sharif University of Technology, Tehran | 2016</p>
-                    </div>
-                </div>
+            <div class="section-list-card">
+                <ul class="section-list">
+                    <li>
+                        <span class="item-title">MAT315: Introduction to Number Theory – <em>Course Instructor</em></span>
+                        <span class="item-meta">University of Toronto, Toronto | Summer 2025</span>
+                    </li>
+                    <li>
+                        <span class="item-title">Mathematics Olympiad – <em>Course Instructor</em></span>
+                        <span class="item-meta">Farzanegan 2 High School, Tehran | 2017 – 2021</span>
+                    </li>
+                    <li>
+                        <span class="item-title">Algebra and Geometry Olympiad – <em>Course Instructor</em></span>
+                        <span class="item-meta">Salam High School, Tehran | Summer 2018</span>
+                    </li>
+                    <li>
+                        <span class="item-title">Geometry Olympiad – <em>Course Instructor</em></span>
+                        <span class="item-meta">Farzanegan 7 High School, Tehran | 2017</span>
+                    </li>
+                    <li>
+                        <span class="item-title">Math Learning Centre – <em>Teaching Assistant</em></span>
+                        <span class="item-meta">University of Toronto | 2023–2024</span>
+                    </li>
+                    <li>
+                        <span class="item-title">MAT344: Introduction to Combinatorics – <em>Teaching Assistant</em></span>
+                        <span class="item-meta">University of Toronto | Summer 2023</span>
+                    </li>
+                    <li>
+                        <span class="item-title">MAT315: Introduction to Number Theory – <em>Teaching Assistant</em></span>
+                        <span class="item-meta">University of Toronto | Winter 2023</span>
+                    </li>
+                    <li>
+                        <span class="item-title">MAT344: Introduction to Combinatorics – <em>Teaching Assistant</em></span>
+                        <span class="item-meta">University of Toronto | Fall 2022</span>
+                    </li>
+                    <li>
+                        <span class="item-title">MAT223: Linear Algebra 1 – <em>Teaching Assistant</em></span>
+                        <span class="item-meta">University of Toronto | Winter 2022</span>
+                    </li>
+                    <li>
+                        <span class="item-title">MAT223: Linear Algebra 1 – <em>Teaching Assistant</em></span>
+                        <span class="item-meta">University of Toronto | Fall 2021</span>
+                    </li>
+                    <li>
+                        <span class="item-title">Algebra – <em>Teaching Assistant</em></span>
+                        <span class="item-meta">Sharif University of Technology, Tehran | 2016</span>
+                    </li>
+                </ul>
             </div>
         </section>
 
         <!-- Honors & Awards Section -->
         <section id="awards" data-aos="fade-up">
             <h2>Honors & Awards</h2>
-            <div class="row g-2">
-                <div class="col-12">
-                    <div class="card list-item-card shadow-sm">
-                        <h5>Ida Bulat Teaching Awards for Graduate Students</h5>
-                        <p class="meta">University of Toronto, Canada | 2026</p>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="card list-item-card shadow-sm">
-                        <h5>University of Toronto Fellowship</h5>
-                        <p class="meta">University of Toronto, Canada | 2021 – 2026</p>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="card list-item-card shadow-sm">
-                        <h5>Blyth Fellowship</h5>
-                        <p class="meta">University of Toronto, Canada | 2021 – 2026</p>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="card list-item-card shadow-sm">
-                        <h5>Gold Medal, International Mathematics Competition for University Students (IMC)</h5>
-                        <p class="meta">30th International Rank | 2019</p>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="card list-item-card shadow-sm">
-                        <h5>Silver Medal, National Mathematics Competition for University Students</h5>
-                        <p class="meta">2019</p>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="card list-item-card shadow-sm">
-                        <h5>Scholarship Recipient, National Elites Foundation</h5>
-                        <p class="meta">2017</p>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="card list-item-card shadow-sm">
-                        <h5>Bronze Medal, Asian Pacific Mathematics Olympiad (APMO)</h5>
-                        <p class="meta">2017</p>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="card list-item-card shadow-sm">
-                        <h5>Gold Medal, Iranian Geometric Olympiad (Graduated Level)</h5>
-                        <p class="meta">2017</p>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="card list-item-card shadow-sm">
-                        <h5>Gold Medal, National Mathematical Olympiad</h5>
-                        <p class="meta">2016</p>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="card list-item-card shadow-sm">
-                        <h5>Gold Medal, Iranian Geometric Olympiad (Advanced Level)</h5>
-                        <p class="meta">2016</p>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="card list-item-card shadow-sm">
-                        <h5>Silver Medal, National Mathematical Olympiad</h5>
-                        <p class="meta">2015</p>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="card list-item-card shadow-sm">
-                        <h5>Bronze Medal, Iranian Geometric Olympiad (Advanced Level)</h5>
-                        <p class="meta">2015</p>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="card list-item-card shadow-sm">
-                        <h5>Gold Medal, Iranian Geometric Olympiad (Intermediate Level)</h5>
-                        <p class="meta">2014</p>
-                    </div>
-                </div>
+            <div class="section-list-card">
+                <ul class="section-list">
+                    <li>
+                        <span class="item-title">Ida Bulat Teaching Awards for Graduate Students</span>
+                        <span class="item-meta">University of Toronto, Canada | 2026</span>
+                    </li>
+                    <li>
+                        <span class="item-title">University of Toronto Fellowship</span>
+                        <span class="item-meta">University of Toronto, Canada | 2021 – 2026</span>
+                    </li>
+                    <li>
+                        <span class="item-title">Blyth Fellowship</span>
+                        <span class="item-meta">University of Toronto, Canada | 2021 – 2026</span>
+                    </li>
+                    <li>
+                        <span class="item-title">Gold Medal, International Mathematics Competition for University Students (IMC)</span>
+                        <span class="item-meta">30th International Rank | 2019</span>
+                    </li>
+                    <li>
+                        <span class="item-title">Silver Medal, National Mathematics Competition for University Students</span>
+                        <span class="item-meta">2019</span>
+                    </li>
+                    <li>
+                        <span class="item-title">Scholarship Recipient, National Elites Foundation</span>
+                        <span class="item-meta">2017</span>
+                    </li>
+                    <li>
+                        <span class="item-title">Bronze Medal, Asian Pacific Mathematics Olympiad (APMO)</span>
+                        <span class="item-meta">2017</span>
+                    </li>
+                    <li>
+                        <span class="item-title">Gold Medal, Iranian Geometric Olympiad (Graduated Level)</span>
+                        <span class="item-meta">2017</span>
+                    </li>
+                    <li>
+                        <span class="item-title">Gold Medal, National Mathematical Olympiad</span>
+                        <span class="item-meta">2016</span>
+                    </li>
+                    <li>
+                        <span class="item-title">Gold Medal, Iranian Geometric Olympiad (Advanced Level)</span>
+                        <span class="item-meta">2016</span>
+                    </li>
+                    <li>
+                        <span class="item-title">Silver Medal, National Mathematical Olympiad</span>
+                        <span class="item-meta">2015</span>
+                    </li>
+                    <li>
+                        <span class="item-title">Bronze Medal, Iranian Geometric Olympiad (Advanced Level)</span>
+                        <span class="item-meta">2015</span>
+                    </li>
+                    <li>
+                        <span class="item-title">Gold Medal, Iranian Geometric Olympiad (Intermediate Level)</span>
+                        <span class="item-meta">2014</span>
+                    </li>
+                </ul>
             </div>
         </section>
 
         <!-- Miscellaneous Section -->
         <section id="miscellaneous" data-aos="fade-up">
             <h2>Miscellaneous</h2>
-            <div class="row g-2">
-                <div class="col-12">
-                    <div class="card list-item-card shadow-sm">
-                        <h5>Turing Enterprises, INC <span class="fw-normal" style="font-weight:400;">– Math and AI
-                                researcher</span></h5>
-                        <p class="meta">2025 – Present</p>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="card list-item-card shadow-sm">
-                        <h5>National Mathematics Olympiad Exams <span class="fw-normal" style="font-weight:400;">–
-                                Managed Exams</span></h5>
-                        <p class="meta">2017 – 2018</p>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="card list-item-card shadow-sm">
-                        <h5>Iranian Geometric Olympiad Exam <span class="fw-normal" style="font-weight:400;">–
-                                Grader</span></h5>
-                        <p class="meta">2017 – 2018</p>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="card list-item-card shadow-sm">
-                        <h5>Iranian Geometric Olympiad <span class="fw-normal" style="font-weight:400;">– Proposed
-                                Problems</span></h5>
-                        <p class="meta">2017 – 2018</p>
-                    </div>
-                </div>
+            <div class="section-list-card">
+                <ul class="section-list">
+                    <li>
+                        <span class="item-title">Turing Enterprises, INC – <em>Math and AI researcher</em></span>
+                        <span class="item-meta">2025 – Present</span>
+                    </li>
+                    <li>
+                        <span class="item-title">National Mathematics Olympiad Exams – <em>Managed Exams</em></span>
+                        <span class="item-meta">2017 – 2018</span>
+                    </li>
+                    <li>
+                        <span class="item-title">Iranian Geometric Olympiad Exam – <em>Grader</em></span>
+                        <span class="item-meta">2017 – 2018</span>
+                    </li>
+                    <li>
+                        <span class="item-title">Iranian Geometric Olympiad – <em>Proposed Problems</em></span>
+                        <span class="item-meta">2017 – 2018</span>
+                    </li>
+                </ul>
             </div>
         </section>
 
